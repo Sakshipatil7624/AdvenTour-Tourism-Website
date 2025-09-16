@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Tourism</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>AdventureX</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Explore the World of Adventure</h1>
+  </section>
+
+  <!-- Packages -->
+  <section class="packages" id="packages">
+    <h2>Our Adventure Packages</h2>
+    <div class="package-cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach Adventure">
+        <h3>Beach Adventure</h3>
+        <p>Relax on exotic beaches with thrilling water sports and sunset cruises.</p>
+        <button onclick="openModal('Beach Adventure')">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain Trekking">
+        <h3>Mountain Trekking</h3>
+        <p>Climb breathtaking peaks and enjoy the serenity of nature trails.</p>
+        <button onclick="openModal('Mountain Trekking')">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Safari Adventure">
+        <h3>Safari Adventure</h3>
+        <p>Experience the thrill of wildlife safaris and explore untouched jungles.</p>
+        <button onclick="openModal('Safari Adventure')">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>AdventureX is your trusted partner for unforgettable adventures across the globe. From mountains to oceans, we craft thrilling experiences tailored for true explorers.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AdventureX | All Rights Reserved</p>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="packageTitle">Book Your Adventure</h2>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="date" required>
+      <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+  </div>
+
+  <!-- S
